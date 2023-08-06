@@ -1,0 +1,16 @@
+<h1 class="mt-5">Edit User: {{user.email}}</h1>
+
+
+    <div class="card card-body mt-4">
+        <form action="/admin/users/edit/new" method="post">
+            <input type="hidden" value="{{user._id}}" name="id">
+            <label for="name">Name: </label>
+            <input type="text" name="name" class="form-control" value="{{user.name}}">
+            <label for="admin" class="mt-4">Admin Status: </label>
+            <select name="isAdm" class="form-control">
+                <option value="false">false</option>
+                <option value="true">true</option>
+            </select>
+            <button class="btn btn-success mt-4" type="submit">Save</button>
+        </form>
+    </div>

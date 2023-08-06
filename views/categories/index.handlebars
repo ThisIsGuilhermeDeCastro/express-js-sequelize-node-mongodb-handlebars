@@ -1,0 +1,13 @@
+<h1>All categories: </h1>
+
+{{#each categories}}
+    <a href="/categories/{{slug}}">
+        <div class="card mt-4">
+            <div class="card-body">
+                <label class="mt-2">{{name}}</label>
+            </div>
+        </div>
+    </a>
+{{else}}
+    <h4>None registered categories.</h4>
+{{/each}}

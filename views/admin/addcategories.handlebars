@@ -1,0 +1,24 @@
+<div class="card">
+    <div class="card-body">
+        <h2>New Category</h2>
+        <br>
+        <form action="/admin/categories/new" method="POST">
+            <label for="name">Name: </label>
+                <input type="text" id="name" name="name" placeholder="Category name" class="form-control">
+                <br>
+            <label for="slug">Slug: </label>
+                <input type="text" id="slug" name="slug" placeholder="Category slug" class="form-control">
+                <br>
+            <button type="submit" class="btn btn-success">Create category</button>
+        </form>
+
+        <!-- Mostrar Lista de Erros com o Array err[]
+        
+        {{#each err}}
+            <div>{{text}}</div>
+        {{else}}
+        {{/each}}
+        
+        -->
+    </div>
+</div>

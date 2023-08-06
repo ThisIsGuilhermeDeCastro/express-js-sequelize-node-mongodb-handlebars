@@ -1,0 +1,15 @@
+<h1 class="mt-5">Management Users</h1>
+
+{{#each users}}
+    <div class="card mt-4">
+    <div class="card-body">
+        <h4 class="card-title"><b>Name:</b> {{name}}</h4>
+        <p class="card-text"><b>Email:</b> {{email}}</p>
+        <p class="card-text"><b>Adm:</b> {{isAdm}}</p>
+        <a href="/admin/users/edit/{{_id}}"><button type="button" class="btn btn-success">Edit User</button></a>
+        <a href="/admin/users/delete/{{_id}}"><button type="button" class="btn btn-danger">Delete User</button></a>
+    </div>
+    </div>
+{{else}}
+    <h4>None users cadastred.</h4>
+{{/each}}
